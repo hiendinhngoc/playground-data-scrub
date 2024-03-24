@@ -1,5 +1,5 @@
 {
-  'user': ''
-  'password': '123456',
-  'email': 'scrub@sensitive.info'
+  "UserId": "AIFBZRJIQN2ONP4ET4EK4",
+  "Account": "***REMOVED***",
+  "Arn": "arn:aws:iam::***REMOVED***:user/andrewcloudcamp"
 }
