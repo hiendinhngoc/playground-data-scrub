@@ -1,5 +1,4 @@
 {
-  "UserId": "AIFBZRJIQN2ONP4ET4EK4",
-  "Account": "***REMOVED***",
-  "Arn": "arn:aws:iam::***REMOVED***:user/andrewcloudcamp"
+  "AWS_ACCESS_KEY_ID": "AIFBZRJIQN2ONP4ET4EK4",
+  "AWS_DEFAULT_REGION": "***REMOVED***"
 }
