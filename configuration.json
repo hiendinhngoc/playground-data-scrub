@@ -2,5 +2,6 @@
   "AWS_ACCESS_KEY_ID": "***REMOVED***",
   "AWS_SECRET_ACESS_KEY": "***REMOVED***",
   "AWS_ACCOUNT_ID": "***REMOVED***",
-  "AWS_DEFAULT_REGION": "***REMOVED***"
+  "AWS_DEFAULT_REGION": "***REMOVED***",
+  "TEST": "Hello"
 }
