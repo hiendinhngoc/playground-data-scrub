@@ -1,7 +1,16 @@
 ***REMOVED***
-  "AWS_ACCESS_KEY_ID": "AKIAQYLPMN5HHHFPZAM2",
-  "AWS_SECRET_ACESS_KEY": "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",
-  "AWS_ACCOUNT_ID": "655602346534",
-  "AWS_DEFAULT_REGION": "us-east-1",
-  "TEST": "Hello"
+  "aws": ***REMOVED***
+    "AWS_ACCESS_KEY_ID": "AKIAQYLPMN5HHHFPZAM2",
+    "AWS_SECRET_ACESS_KEY": "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",
+    "AWS_ACCOUNT_ID": "655602346534",
+    "AWS_DEFAULT_REGION": "us-east-1",
+    "TEST": "Hello"
+***REMOVED***,
+  "azure": ***REMOVED***
+    "appId": "3df3c7c5-1ce0-4025-8463-1d32f2fcd473",
+    "displayName": "azure-cli-QzxcGgj18TR9y5tPJ8Ba17Rd3F68g9IT",
+    "fileWithCertAndPrivateKey": "Code_sign_server.pem",
+    "password": "12345678",
+    "tenant": "c5b88def-64d6-4276-aa23-feab7321ced5"
+***REMOVED***
 ***REMOVED***
