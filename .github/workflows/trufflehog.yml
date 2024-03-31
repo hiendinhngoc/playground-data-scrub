@@ -30,9 +30,9 @@ jobs:
         continue-on-error: true
         with:
           path: ./
-          base: ""
-          head: ${{ github.ref_name }}
-          extra_args: --only-verified
+          base: "${{ github.event.pull_request.base.ref }}"
+          head: "${{ github.event.pull_request.head.ref }}"
+          extra_args: --debug
 
       - name: Scan Results Status
         if: steps.trufflehog.outcome == 'failure'
