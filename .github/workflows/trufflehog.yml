@@ -30,8 +30,8 @@ jobs:
         continue-on-error: true
         with:
           path: ./
-          base: "$***REMOVED******REMOVED*** github.event.pull_request.base.ref ***REMOVED******REMOVED***"
-          head: "$***REMOVED******REMOVED*** github.event.pull_request.head.ref ***REMOVED******REMOVED***"
+          base: "$***REMOVED******REMOVED*** github.event.repository.default_branch ***REMOVED******REMOVED***"
+          head: HEAD
           extra_args: --debug
 
       - name: Scan Results Status
