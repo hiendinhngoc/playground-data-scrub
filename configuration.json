@@ -1,10 +1,9 @@
 ***REMOVED***
   "aws": ***REMOVED***
-    "AWS_ACCESS_KEY_ID": "AKIAQYLPMN5HHHFPZAM2",
-    "AWS_SECRET_ACESS_KEY": "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",
+    "AWS_ACCESS_KEY_ID": "AKIA6ODU5DHT24MP37DA",
+    "AWS_SECRET_ACESS_KEY": "1jbXEBNaz2xCF+HsVj7yMhMN0MaWwHxijPT+zAj00",
     "AWS_ACCOUNT_ID": "655602346534",
-    "AWS_DEFAULT_REGION": "us-east-1",
-    "TEST": "Hello"
+    "AWS_DEFAULT_REGION": "us-east-2"
 ***REMOVED***,
   "azure": ***REMOVED***
     "appId": "3df3c7c5-1ce0-4025-8463-1d32f2fcd473",
