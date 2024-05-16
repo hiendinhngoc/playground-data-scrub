@@ -1,15 +1,20 @@
 ***REMOVED***
-  "aws": ***REMOVED***
-    "AWS_ACCESS_KEY_ID": "s",
-    "AWS_SECRET_ACESS_KEY": "1jbXEBNaz2xCF+s+zAj00",
-    "AWS_ACCOUNT_ID": "***REMOVED***",
-    "AWS_DEFAULT_REGION": "us-east-2"
-***REMOVED***,
-  "azure": ***REMOVED***
-    "appId": "3df3c7c5-1ce0-4025-8463-1d32f2fcd473",
-    "displayName": "***REMOVED***",
-    "fileWithCertAndPrivateKey": "***REMOVED***",
-    "password": "***REMOVED***",
-    "tenant": "***REMOVED***"
-***REMOVED***
+  "rules": [
+    ***REMOVED***
+      "name": "AWS Access Key",
+      "regex": "AKIA[0-9A-Z]***REMOVED***16***REMOVED***"
+  ***REMOVED***,
+    ***REMOVED***
+      "name": "AWS Secret Key",
+      "regex": "[a-zA-Z0-9/+=]***REMOVED***40***REMOVED***"
+  ***REMOVED***,
+    ***REMOVED***
+      "name": "Azure App ID",
+      "regex": "[0-9a-fA-F-]***REMOVED***36***REMOVED***"
+  ***REMOVED***,
+    ***REMOVED***
+      "name": "Generic Password",
+      "regex": "password[:=\\s][\"']?[^\"'\\s]***REMOVED***8,***REMOVED***[\"']?"
+  ***REMOVED***
+  ]
 ***REMOVED***
