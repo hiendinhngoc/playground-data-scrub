@@ -4,6 +4,7 @@ repos:
       - id: trufflehog
         name: TruffleHog
         description: Detect secrets in your data.
-        entry: trufflehog filesystem .
+        entry: trufflehog filesystem trufflehog-rules.json .
         language: system
         stages: ["commit", "push"]
+        pass_filenames: false
