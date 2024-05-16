@@ -1,15 +1,9 @@
-***REMOVED***
-  "aws": ***REMOVED***
-    "AWS_ACCESS_KEY_ID": "***REMOVED***",
-    "AWS_SECRET_ACESS_KEY": "y1Qt0lOuLHUD9EFSrqSvUBoM+S5pZSsQL6PAoJ4E",
-    "AWS_ACCOUNT_ID": "***REMOVED***",
-    "AWS_DEFAULT_REGION": "us-east-2"
-***REMOVED***,
-  "azure": ***REMOVED***
+{
+  "azure": {
     "appId": "***REMOVED***",
     "displayName": "***REMOVED***",
     "fileWithCertAndPrivateKey": "***REMOVED***",
     "password": "***REMOVED***",
     "tenant": "***REMOVED***"
-***REMOVED***
-***REMOVED***
+  }
+}

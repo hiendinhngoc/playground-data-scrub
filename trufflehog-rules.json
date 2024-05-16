@@ -1,24 +1,24 @@
-***REMOVED***
+{
   "rules": [
-    ***REMOVED***
+    {
       "name": "AWS Access Key",
-      "regex": "AKIA[0-9A-Z]***REMOVED***16***REMOVED***"
-  ***REMOVED***,
-    ***REMOVED***
+      "regex": "AKIA[0-9A-Z]{16}"
+    },
+    {
       "name": "AWS Secret Key",
-      "regex": "(?<![A-Za-z0-9/+=])[A-Za-z0-9/+=]***REMOVED***40***REMOVED***(?![A-Za-z0-9/+=])"
-  ***REMOVED***,
-    ***REMOVED***
+      "regex": "(?<![A-Za-z0-9/+=])[A-Za-z0-9/+=]{40}(?![A-Za-z0-9/+=])"
+    },
+    {
       "name": "AWS Account ID",
-      "regex": "[0-9]***REMOVED***12***REMOVED***"
-  ***REMOVED***,
-    ***REMOVED***
+      "regex": "[0-9]{12}"
+    },
+    {
       "name": "Azure App ID",
-      "regex": "[0-9a-fA-F-]***REMOVED***36***REMOVED***"
-  ***REMOVED***,
-    ***REMOVED***
+      "regex": "[0-9a-fA-F-]{36}"
+    },
+    {
       "name": "Generic Password",
-      "regex": "password[:=\\s][\"']?[^\"'\\s]***REMOVED***8,***REMOVED***[\"']?"
-  ***REMOVED***
+      "regex": "password[:=\\s][\"']?[^\"'\\s]{8,}[\"']?"
+    }
   ]
-***REMOVED***
+}

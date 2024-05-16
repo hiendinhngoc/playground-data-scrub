@@ -30,7 +30,7 @@ jobs:
         continue-on-error: true
         with:
           path: ./
-          base: "$***REMOVED******REMOVED*** github.event.repository.default_branch ***REMOVED******REMOVED***"
+          base: "${{ github.event.repository.default_branch }}"
           head: HEAD
           extra_args: --debug
 
