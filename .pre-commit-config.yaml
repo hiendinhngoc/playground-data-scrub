@@ -6,5 +6,13 @@ repos:
         description: Detect secrets in your data.
         entry: trufflehog filesystem trufflehog-rules.json .
         language: system
-        stages: ["commit", "push"]
+        stages:
+          [
+            "commit",
+            "push",
+            "manual",
+            "post-checkout",
+            "post-merge",
+            "post-rewrite",
+          ]
         pass_filenames: false
