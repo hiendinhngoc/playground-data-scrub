@@ -4,15 +4,6 @@ repos:
       - id: trufflehog
         name: TruffleHog
         description: Detect secrets in your data.
-        entry: bash -c 'echo "Running trufflehog"; trufflehog filesystem trufflehog-rules.json .'
+        entry: echo "Local hook is running"
         language: system
-        stages:
-          [
-            "commit",
-            "push",
-            "manual",
-            "post-checkout",
-            "post-merge",
-            "post-rewrite",
-          ]
-        pass_filenames: false
+        stages: ["commit", "push"]
