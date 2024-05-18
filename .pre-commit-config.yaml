@@ -4,6 +4,6 @@ repos:
       - id: trufflehog
         name: TruffleHog
         description: Detect secrets in your data.
-        entry: echo "Local hook is running"
+        entry: bash -c 'echo "Running TruffleHog"; trufflehog filesystem trufflehog-rules.yaml .'
         language: system
         stages: ["commit", "push"]
