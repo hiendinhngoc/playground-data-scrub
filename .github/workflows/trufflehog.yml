@@ -1,39 +1,17 @@
-name: Check sensitive info
+name: TruffleHog Enterprise scan
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-
-permissions:
-  contents: read
-  id-token: write
-  issues: write
-  pull-requests: write
+on: [push, pull_request]
 
 jobs:
-  TruffleHog:
+  scanning:
+    name: TruffleHog Enterprise scan
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v2
         with:
-          fetch-depth: 0
-
-      - name: TruffleHog OSS
-        id: trufflehog
-        uses: trufflesecurity/trufflehog@main
-        continue-on-error: true
+          fetch-depth: 0 # fetch all history so multiple commits can be scanned
+      - name: TruffleHog Enterprise scan
+        uses: trufflesecurity/TruffleHog-Enterprise-Github-Action@main
         with:
-          path: ./
-          base: "${{ github.event.pull_request.base.ref }}"
-          head: "${{ github.event.pull_request.head.ref }}"
-          extra_args: --debug
-
-      - name: Scan Results Status
-        if: steps.trufflehog.outcome == 'failure'
-        run: exit 1
+          args: --fail-verified ${{ github.event.repository.default_branch }} HEAD
