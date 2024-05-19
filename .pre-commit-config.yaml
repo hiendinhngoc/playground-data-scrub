@@ -15,6 +15,6 @@ repos:
         description: Test if the local hook is triggered.
         # entry: ./run_echo_test.sh
         entry: /home/hien/.local/bin/trufflehog filesystem trufflehog-rules.yaml .
-        language: script
-        verbose: true
+        language: system
+        # verbose: true
         stages: ["commit", "push"]
