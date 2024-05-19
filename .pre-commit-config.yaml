@@ -15,4 +15,5 @@ repos:
         description: Test if the local hook is triggered.
         entry: ./run_echo_test.sh
         language: script
+        verbose: true
         stages: ["commit", "push"]
