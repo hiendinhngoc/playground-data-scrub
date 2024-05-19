@@ -16,5 +16,5 @@ repos:
         # entry: ./run_echo_test.sh
         entry: /home/hien/.local/bin/trufflehog filesystem trufflehog-rules.yaml .
         language: system
-        # verbose: true
+        verbose: true
         stages: ["commit", "push"]
