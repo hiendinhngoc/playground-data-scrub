@@ -4,18 +4,6 @@ repos:
       - id: trufflehog
         name: TruffleHog
         description: Detect secrets in your data.
-        entry: /home/hien/.local/bin/trufflehog filesystem trufflehog-rules.yaml .
+        entry: bash -c '$HOME/.local/bin/trufflehog filesystem trufflehog-rules.yaml --fail .'
         language: system
-        verbose: true
         stages: ["commit", "push"]
-# repos:
-#   - repo: local
-#     hooks:
-#       - id: echo-test
-#         name: Echo Test
-#         description: Test if the local hook is triggered.
-#         # entry: ./run_echo_test.sh
-#         entry: /home/hien/.local/bin/trufflehog filesystem trufflehog-rules.yaml .
-#         language: system
-#         verbose: true
-#         stages: ["commit", "push"]
