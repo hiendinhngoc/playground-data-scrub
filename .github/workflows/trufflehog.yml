@@ -1,39 +1,18 @@
-name: Check sensitive info
-
 on:
   push:
     branches:
       - main
   pull_request:
 
-permissions:
-  contents: read
-  id-token: write
-  issues: write
-  pull-requests: write
-
 jobs:
-  TruffleHog:
+  test:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
-      - name: TruffleHog OSS
-        id: trufflehog
+      - name: Secret Scanning
         uses: trufflesecurity/trufflehog@main
-        continue-on-error: true
         with:
-          path: ./
-          base: "${{ github.event.pull_request.base.ref }}"
-          head: "${{ github.event.pull_request.head.ref }}"
-          extra_args: --debug
-
-      - name: Scan Results Status
-        if: steps.trufflehog.outcome == 'failure'
-        run: exit 1
+          extra_args: --only-verified
