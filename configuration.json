@@ -1,9 +1,9 @@
 {
   "aws": {
-    "AWS_ACCESS_KEY_ID": "AKIA6ODU5DHTTVN3MD56",
-    "AWS_SECRET_ACESS_KEY": "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",
+    "AWS_ACCESS_KEY_ID": "***",
+    "AWS_SECRET_ACESS_KEY": "***",
     "AWS_ACCOUNT_ID": "655602346534",
-    "AWS_DEFAULT_REGION": "us-east-2"
+    "AWS_DEFAULT_REGION": "us-east-1"
   },
   "azure": {
     "appId": "3df3c7c5-1ce0-4025-8463-1d32f2fcd471",
