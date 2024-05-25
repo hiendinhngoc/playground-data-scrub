@@ -1,7 +1,7 @@
 {
   "aws": {
-    "AWS_ACCESS_KEY_ID": "AKIA6ODU5DHT4MFATHW7",
-    "AWS_SECRET_ACESS_KEY": "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",
+    "AWS_ACCESS_KEY_ID": "***",
+    "AWS_SECRET_ACESS_KEY": "***",
     "AWS_ACCOUNT_ID": "655602346534",
     "AWS_DEFAULT_REGION": "us-east-1"
   },
