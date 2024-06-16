@@ -5,7 +5,7 @@ repos:
         name: TruffleHog
         description: Detect secrets in your data.
         # entry: bash -c '$HOME/.local/bin/trufflehog filesystem trufflehog-rules.yaml --fail .'
-        # entry: ./trufflehog-exclude.sh
+        entry: ./trufflehog-exclude.sh
         language: system
         stages: ["commit", "push"]
         exclude: ^credentials\.txt$
